@@ -39,5 +39,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     e: $data.duration
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-aa0ef52c"], ["__file", "D:/code/ABDcafé/components/home/banner.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-aa0ef52c"], ["__file", "D:/元数科技/ABDcafe/components/home/banner.vue"]]);
 wx.createComponent(Component);

@@ -33,5 +33,5 @@ const _sfc_main = {
     };
   }
 };
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/code/ABDcafé/components/home/ways.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/元数科技/ABDcafe/components/home/ways.vue"]]);
 wx.createComponent(Component);

@@ -14,7 +14,7 @@ import personalinfo from '../../components/home/personalinfo.vue'
 
 <style>
 	.content {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}
 
 </style>

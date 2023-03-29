@@ -16,13 +16,14 @@ const _sfc_main = {
       return common_vendor.e({
         a: common_vendor.unref(user)
       }, common_vendor.unref(user) ? {
-        b: common_vendor.t(common_vendor.unref(user))
+        b: common_vendor.unref(user).avatarUrl,
+        c: common_vendor.t(common_vendor.unref(user).nickName)
       } : {
-        c: common_vendor.t(common_vendor.unref(user)),
-        d: common_vendor.o(navto)
+        d: common_vendor.t(common_vendor.unref(user)),
+        e: common_vendor.o(navto)
       });
     };
   }
 };
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/code/ABDcafé/components/home/personalinfo.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/元数科技/ABDcafe/components/home/personalinfo.vue"]]);
 wx.createComponent(Component);

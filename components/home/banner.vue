@@ -1,11 +1,11 @@
 <template>
-	<view class="content">
+	<view>
 		<view class="uni-margin-wrap">
 			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay"
 				:interval="interval" :duration="duration">
 				<swiper-item v-for="(item,index) in list1" :key="index"  >
 					<view class="swiper-item uni-bg-red" @click="navto">
-						<img :src="item" alt="" @click="navto">
+							<image :src="item" @click="navto" mode=""></image>
 					</view>
 				</swiper-item>
 			</swiper>
@@ -42,21 +42,15 @@
 <style lang="scss" scoped>
 	.swiper {
 		height: 530px;
-		overflow:hidden; 
+		// overflow:hidden; 
 	}
 	.swiper-item {
 		height: 100%;
+		width: 100%;
 		text-align: center;
-		img{
+		image{
 			width: 100%;
 			height: 100%;
-		}
-	}
-	.content {
-		::v-deep .swiper {
-			margin: auto;
-			z-index: 1;
-			margin-bottom: 30rpx;
 		}
 	}
 

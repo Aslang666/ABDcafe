@@ -22,7 +22,7 @@
         "selectedIconPath": "static/home_active.png"
       },
       {
-        "text": "点餐",
+        "text": "菜单",
         "pagePath": "pages/menu/menu",
         "iconPath": "static/menu.png",
         "selectedIconPath": "static/menu_active.png"

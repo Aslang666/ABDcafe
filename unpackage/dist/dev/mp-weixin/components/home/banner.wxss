@@ -25,18 +25,13 @@
 /* 文章场景相关 */
 .swiper.data-v-aa0ef52c {
   height: 530px;
-  overflow: hidden;
 }
 .swiper-item.data-v-aa0ef52c {
   height: 100%;
+  width: 100%;
   text-align: center;
 }
-.swiper-item img.data-v-aa0ef52c {
+.swiper-item image.data-v-aa0ef52c {
   width: 100%;
   height: 100%;
-}
-.content.data-v-aa0ef52c .swiper {
-  margin: auto;
-  z-index: 1;
-  margin-bottom: 30rpx;
 }

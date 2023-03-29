@@ -1,5 +1,4 @@
 <template>
-	<view class="">
 	<view class="container">
 		<view class="block" v-for="item in waysList" :key="item.id">
 			<view @click="navto(item.navurl)">
@@ -9,8 +8,6 @@
 				</view>
 			</view>
 		</view>
-	</view>
-		
 	</view>
 </template>
 
@@ -43,6 +40,7 @@
 	color: #fff;
 	justify-content: space-around;
 	margin: auto;
+	margin-top: 20px;
 	padding: 2vw;
 	text-align: center;
 	.block{
