@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/order/order",
+    "pages/personal/personal",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#002fa5",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home_active.png"
+      },
+      {
+        "text": "点餐",
+        "pagePath": "pages/menu/menu",
+        "iconPath": "static/menu.png",
+        "selectedIconPath": "static/menu_active.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/order/order",
+        "iconPath": "static/order.png",
+        "selectedIconPath": "static/order_active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/personal/personal",
+        "iconPath": "static/person.png",
+        "selectedIconPath": "static/person_active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,{
+            "path" : "pages/menu/menu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "点餐",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/personal/personal",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#002fa5",
+		"list": [{
+			"text": "首页",
+			"pagePath": "pages/index/index",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/home_active.png"
+		}, {
+			"text": "点餐",
+			"pagePath": "pages/menu/menu",
+			"iconPath": "static/menu.png",
+			"selectedIconPath": "static/menu_active.png"
+		}, {
+			"text": "订单",
+			"pagePath": "pages/order/order",
+			"iconPath": "static/order.png",
+			"selectedIconPath": "static/order_active.png"
+		}, {
+			"text": "我的",
+			"pagePath": "pages/personal/personal",
+			"iconPath": "static/person.png",
+			"selectedIconPath": "static/person_active.png"
+		}]
+	},
+	"uniIdRouter": {}
+}
