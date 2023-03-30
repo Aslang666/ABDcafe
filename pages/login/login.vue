@@ -13,13 +13,13 @@
 				<view class="left">
 					<view class="text">
 						<image src="../../static/abbr.png" mode=""></image>
-						<span>SHARE</span>
+						<span>专属客服</span>
 					</view><view class="text">
 						<image src="../../static/ticket.png" mode=""></image>
-						<span>SHARE</span>
+						<span>优惠券</span>
 					</view><view class="text">
 						<image src="../../static/cafe.png" mode=""></image>
-						<span>SHARE</span>
+						<span>邀请任喝</span>
 					</view>
 				</view>
 				<view class="right">
@@ -40,7 +40,7 @@
 					uni.setStorageSync('user',res.userInfo)
 					if(uni.getStorageSync('user')){
 						uni.reLaunch({
-							url:'../index/index'
+							url:'../index/index',
 						})
 					}
 		          },
@@ -81,8 +81,13 @@
 		margin: 20px auto;
 		font-size: 20px;
 		font-weight: 800;
-		span {
+		span:nth-child(1) {
 			color: #002fa5;
+			font-size: 20px;
+		}
+		span {
+			color: #9d9d9d;
+			font-size: 17px;
 		}
 	}
 	.block {

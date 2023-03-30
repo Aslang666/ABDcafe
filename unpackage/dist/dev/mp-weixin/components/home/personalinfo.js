@@ -3,12 +3,19 @@ const common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   __name: "personalinfo",
   setup(__props) {
+    let user = common_vendor.index.getStorageSync("user");
     const navto = () => {
       common_vendor.index.navigateTo({
-        url: "../login/login"
+        url: "../login/login",
+        animationType: "pop-in",
+        animationDuration: 200
       });
     };
-    let user = common_vendor.index.getStorageSync("user");
+    const tomenu = () => {
+      common_vendor.index.switchTab({
+        url: "../personal/personal"
+      });
+    };
     common_vendor.onMounted(() => {
       console.log(user);
     });
@@ -17,13 +24,14 @@ const _sfc_main = {
         a: common_vendor.unref(user)
       }, common_vendor.unref(user) ? {
         b: common_vendor.unref(user).avatarUrl,
-        c: common_vendor.t(common_vendor.unref(user).nickName)
+        c: common_vendor.t(common_vendor.unref(user).nickName),
+        d: common_vendor.o(tomenu)
       } : {
-        d: common_vendor.t(common_vendor.unref(user)),
-        e: common_vendor.o(navto)
+        e: common_vendor.t(common_vendor.unref(user)),
+        f: common_vendor.o(navto)
       });
     };
   }
 };
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/元数科技/ABDcafe/components/home/personalinfo.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/code/ABDcafe/components/home/personalinfo.vue"]]);
 wx.createComponent(Component);

@@ -51,8 +51,13 @@ page.data-v-e4e4508d {
   font-size: 20px;
   font-weight: 800;
 }
-.text span.data-v-e4e4508d {
+.text span.data-v-e4e4508d:nth-child(1) {
   color: #002fa5;
+  font-size: 20px;
+}
+.text span.data-v-e4e4508d {
+  color: #9d9d9d;
+  font-size: 17px;
 }
 .block.data-v-e4e4508d {
   width: 90%;

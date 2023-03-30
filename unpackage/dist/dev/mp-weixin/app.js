@@ -7,6 +7,10 @@ if (!Math) {
   "./pages/order/order.js";
   "./pages/personal/personal.js";
   "./pages/login/login.js";
+  "./pages/security/security.js";
+  "./pages/address/address.js";
+  "./pages/profile/profile.js";
+  "./pages/editaddr/editaddr.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -19,7 +23,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/元数科技/ABDcafe/App.vue"]]);
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/code/ABDcafe/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

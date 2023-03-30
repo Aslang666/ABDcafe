@@ -4,7 +4,11 @@
     "pages/menu/menu",
     "pages/order/order",
     "pages/personal/personal",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/security/security",
+    "pages/address/address",
+    "pages/profile/profile",
+    "pages/editaddr/editaddr"
   ],
   "window": {
     "navigationBarTextStyle": "black",

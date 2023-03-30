@@ -1,14 +1,14 @@
 <template>
 	<view class="">
 		<view class="container2" v-if="user">
-			<view class="block">
+			<view class="block" @click="tomenu">
 				<!-- {{user}} -->
 				<view class="left">
 					
 				<view class="avatar">
-					<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+					<!-- <button class="avatar-wrapper" open-type="chooseAvatar" @chooseavatar="onChooseAvatar"> -->
 					<image :src="user.avatarUrl" mode=""></image>
-					</button> 
+					<!-- </button> -->
 					
 					<!-- <image src="../../static/cafe.png" mode=""></image> -->
 				</view>
@@ -41,12 +41,26 @@
 <script setup>
 import { onMounted } from "vue";
 	name: "personalinfo";
+	let user = uni.getStorageSync('user')
 	const navto = () => {
 		uni.navigateTo({
-			url: '../login/login'
+			url: '../login/login',
+			animationType: 'pop-in',
+			animationDuration: 200
 		})
 	}
-	let user = uni.getStorageSync('user')
+	const tomenu = () => {
+		uni.switchTab({
+			url: '../personal/personal'
+
+		})
+	}
+	  // const onChooseAvatar = (e) => {
+	  //   const { avatarUrl } = e.detail 
+	  //   this.setData({
+	  //     avatarUrl,
+	  //   })
+	  // }
 	onMounted(()=>{
 		// user = uni.getStorageSync('user')
 		console.log(user)

@@ -26,7 +26,7 @@
 	}]
 	const navto = (url) =>{
 		uni.switchTab({
-			url: '../menu/menu'
+			url: '../menu/menu',
 		})
 	}
 </script>
