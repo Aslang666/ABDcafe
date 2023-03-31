@@ -1,1 +1,0 @@
-<view class="container"><view wx:for="{{a}}" wx:for-item="item" wx:key="d" class="block"><view bindtap="{{item.c}}"><view class="text"><view>{{item.a}}</view><view>{{item.b}}</view></view></view></view></view>

@@ -1,1 +1,0 @@
-<view class="page-index"><uni-address-selector wx:if="{{a}}" bindcancel="{{b}}" bindconfirm="{{c}}" u-i="23cf920e-0" bind:__l="__l" u-p="{{d}}"></uni-address-selector> 1123 </view>

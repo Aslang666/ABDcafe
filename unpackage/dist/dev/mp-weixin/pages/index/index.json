@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "首页",
-  "usingComponents": {
-    "banner": "../../components/home/banner",
-    "ways": "../../components/home/ways",
-    "personalinfo": "../../components/home/personalinfo"
-  }
-}

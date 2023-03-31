@@ -1,0 +1,15 @@
+{
+    "id": "shopwind-multpicker",
+    "name": "通用性封装三级联动，可支持任意模型（如地区联动，分类联动）",
+    "version": "v1.0.1",
+    "description": "支持地区省、市、区三级联动，也可以支持任意模型如商品分类的三级联动，一个组件即可完成，使用简单，包括从后台读取数据也给出实现代码",
+    "keywords": [
+        "picker"
+    ],
+    "dependencies": {
+        "vant": "^4.1.2"
+    },
+    "devDependencies": {
+        "babel-plugin-import": "^1.13.6"
+    }
+}

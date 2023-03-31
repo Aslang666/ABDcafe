@@ -4,7 +4,6 @@ import App from './App'
 import Vue from 'vue'
 Vue.config.productionTip = false
 App.mpType = 'app'
-
 try {
   function isPromise(obj) {
     return (
@@ -36,13 +35,16 @@ try {
 const app = new Vue({
   ...App
 })
+
 app.$mount()
 // #endif
-
 // #ifdef VUE3
 import { createSSRApp } from 'vue'
+import { Picker,Cell, CellGroup,Field,Toast,Popup,Button,Area,Switch } from 'vant';
+import 'vant/lib/index.css'
 export function createApp() {
   const app = createSSRApp(App)
+  app.use(Picker).use(Toast).use(Popup).use(Button).use(Area).use(Switch).use(Cell).use(CellGroup).use(Field)
   return {
     app
   }
