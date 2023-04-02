@@ -7,7 +7,8 @@
         "picker"
     ],
     "dependencies": {
-        "vant": "^4.1.2"
+        "vant": "^4.1.2",
+        "vant-weapp": "^0.5.29"
     },
     "devDependencies": {
         "babel-plugin-import": "^1.13.6"
